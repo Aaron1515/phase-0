@@ -1,4 +1,4 @@
-######Paste a link to your aaron1515.github.io repository.
+#aaron1515.github.io
 
 #####Explain how to create a repository on GitHub and clone the repository to your local computer to a non-technical person.
   First create a user name and password on github.com.
@@ -15,11 +15,11 @@
 #####What do you think about Open Source? Does it make you nervous or protective? Does it feel like utopia?
   Open source codes are important to the programing world.  It help us share and compare codes and build a better programming community.
 
-######Assess the importance of using licenses.
+#####Assess the importance of using licenses.
   Licenses are a great deal of importance.  But at this time for beginners not so much. Once you great a great code, you might want to wish you had a license on it.  You might want to take credit where great credit is due.
 
-######What concepts were solidified in the challenge? Did you have any "aha" moments? What did you struggle with?
+#####What concepts were solidified in the challenge? Did you have any "aha" moments? What did you struggle with?
   I always having "aha" moments when I"m learning everything.  I don't think this will stop for me anytime soon.  Learning and creating things and being able to understand it is so exciting.  I hope this doesn't come to and end.  Seeing how everything is always changing, I don't see an end to it.  I did struggle with remembering the command to get, check, clone, pull, add, switch back and forth in master.  But I do get the concept of it.  So I just need to keep looking back and rewatching the video to get the correct words to type into command line.
 
-Did you find any resources on your own that helped you better understand a topic? If so, please list it.
+#####Did you find any resources on your own that helped you better understand a topic? If so, please list it.
   I used codecedmy.com for their git.  I started a few of their course but didn't get much farther into it.  Their course on git is still on their beta version so it isn't as reliable.  But it did help just a bit and it was confusing because things are explain corrently at this time.  But it did help me get the concept of it with comparing what i'm doing now.
