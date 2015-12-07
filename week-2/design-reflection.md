@@ -60,16 +60,16 @@ It will have different actions on the top of the site for different visitors so 
 -What are the main things someone should know about design and user experience?
 
 
-    There's a few things you will need to know about design and UX.  The user experiance needs to be simple.  Look at apple, everything they make is simple but there's always a hidden side to apple when you choose to open that up.  Such as terminal on Apple computers.  Other things is there's going to be many different users that will log on to your site, you can't just cater to just one type of user.  As in user experiance you'll have to have image to keep the vistors entertained.
+There's a few things you will need to know about design and UX.  The user experiance needs to be simple.  Look at apple, everything they make is simple but there's always a hidden side to apple when you choose to open that up.  Such as terminal on Apple computers.  Other things is there's going to be many different users that will log on to your site, you can't just cater to just one type of user.  As in user experiance you'll have to have image to keep the vistors entertained.
 
 
-What is user experience design and why is it valuable?
+-What is user experience design and why is it valuable?
 
-    User experiance is how the website flow.  It's valuble because if a site is hard to buy things or load very slow.  You'll lose the attention span of your visitors.  Second thing is always have new content.  No one like to go a restaurant and always order one place everytime.  It goes borning.  Experiance needs to be fun, easy, and new all the time.
+User experiance is how the website flow.  It's valuble because if a site is hard to buy things or load very slow.  You'll lose the attention span of your visitors.  Second thing is always have new content.  No one like to go a restaurant and always order one place everytime.  It goes borning.  Experiance needs to be fun, easy, and new all the time.
 
 
-Which parts of the challenge did you find tedious?
+-Which parts of the challenge did you find tedious?
 
-    I found the reflection tedious.  I'm sure when I look back at this it will reflect how far I have gone.
+I found the reflection tedious.  I'm sure when I look back at this it will reflect how far I have gone.
 
 
