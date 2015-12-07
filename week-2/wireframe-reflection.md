@@ -31,4 +31,4 @@ What questions did you ask during this challenge? What resources did you find to
 
 Which parts of the challenge did you enjoy and which parts did you find tedious?
 
-    I found reading some of the things that tells you it should be in phase-0 instead of [username].github.io confusing.
+  I found reading some of the things that tells you it should be in phase-0 instead of [username].github.io confusing.
