@@ -1,4 +1,4 @@
-![Alt text](Site-Map.png "Optional title")
+![Alt text](img/Site-Map.png "Optional title")
 
 What are the 6 Phases of Web Design?
   1. Gathering information
