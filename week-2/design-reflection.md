@@ -1,4 +1,4 @@
-![Alt text](img/Site-Map.png "Optional title")
+<a href="https://github.com/Aaron1515/phase-0/blob/master/week-2/imgs/Site-Map.png">
 
 What are the 6 Phases of Web Design?
   1. Gathering information
