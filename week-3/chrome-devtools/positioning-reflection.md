@@ -1,3 +1,7 @@
+#3.4 Chrome DevTools
+
+
+
 ##How can you use Chrome's DevTools inspector to help you format or position elements?
 
 Chrome's DevTools is really good for formatting and position because it display the CSS adjustment inreal time.  Therefor we do not have to keep saving and refreshing our page to see the changes.  Once we are satisfied with our changes in CSS we can just copy and paste the CSS into our .css file.  I have done CSS already and moved on to 3.7 in adding CSS to my index.html file but I was saving and reloading the page.  Which I had to do a few dozen time.  This does make things a lot eazier to work on CSS.
