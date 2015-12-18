@@ -26,6 +26,8 @@ To explain the margin, border, and padding I want to you refer to the image I ha
 
 The content is what's inside, then the next layer is padding, and next layer is boarder, and last is margin.  You have to think of it as an onion.  Which layer you want to adjust.
 As a key keeping the concept of content > padding > boarder > margin is my way of thinking of it.
+
+
 ![CSS Box Model](imgs/css-box-model.gif)
 
 ##What was your impression of this challenge overall? (love, hate, and why?)
