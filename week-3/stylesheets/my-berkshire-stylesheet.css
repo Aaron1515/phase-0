@@ -69,3 +69,32 @@ li a {
      width: 130px;
     height: 130px;
 }
+
+/*
+
+What is important to know when linking an external file (like a stylesheet) to an HTML file?
+
+  Very important to understand that you must select a reliable source.  Some sites can be taken down so choose wizely on the site you decite to pull your fonts , css, and your images from. You so have to know it could be copyright righted materials.
+
+  CSS linking from external files, you might have more than one css file you are linking it from.  So make sure you use the css files in proper order to get the correct style you want.
+
+What tricks did you use to help you with positioning? How hard was it to get the site as you wanted it?
+
+  The trick to the positioning was pretty easy because I did 3.5 positioning before doing the peering on this challenge.
+  We was pretty much in a rabbit hole in CSS because there's always many ways to do something.  It's about trial and errors.
+
+What CSS did you use to modify the element style (like size, color, etc.)
+
+  I mainly use px for the size, which make things easier.  We could of used em but decided to stick with one and keep it the same on the whole site.  We used basic color on the site.  We didn't use much of the hashtag color palettes.  We did some intense css styling today.
+
+  We added span, div, and classes to our html file to style it from our CSS page as well.
+
+  We also used external fonts to make the header more modern.
+
+Did you modify the HTML to include classes or ids? If so, which did you choose and why? If you didn't, how would you know which one to add to your HTML?
+
+  We did not have to mod the html file beside adding class to it.  After talking to my guide yesterday.  Best practice was not to use ids.  Stick to classes as much as possible.  So we stick with mostly classes.
+
+When you compared your site to the actual code base, which do you think had cleaner code that followed best practices and why?
+
+  I think we did a much better code than the website.  For one we did a separate file for the html and css.  Where I can change a lot of things easily, plus you can trouble shoot it if there was an issues.
