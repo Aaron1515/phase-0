@@ -33,13 +33,13 @@ As you can see using interger for division you don't get the remainder and if yo
 This is concidering that there's no leap years.
 
 ##4.2.1 Defining Variables
-https://github.com/[USERNAME]/phase-0/blob/master/week-4/defining-variables.rb (Links to an external site.)
+https://github.com/Aaron1515/phase-0/blob/master/week-4/defining-variables.rb
 
 ##4.2.2 Simple String Methods
-https://github.com/[USERNAME]/phase-0/blob/master/week-4/simple-string.rb
+https://github.com/Aaron1515/phase-0/blob/master/week-4/simple-string.rb
 
 ##4.2.3 Local Variables and Basic Arithmetical Expressions
-https://github.com/[USERNAME]/phase-0/blob/master/week-4/basic-math.rb
+https://github.com/Aaron1515/phase-0/blob/master/week-4/basic-math.rb
 
 #Reflection
 
