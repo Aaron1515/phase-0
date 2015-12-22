@@ -27,8 +27,7 @@ How do you define a method?
   To define a method you start by having "def" and next you will put the name of the method.  If there are parameter(s) you will put those in the "()" and seprate them with a comma.
 
 What is the difference between a local variable and a method?
-  Local variable can be used anywhere locally on the file.  Method could be used inside the method only.  But until we learn more about methods there will be global variable that could be used outside of the method as well.
-
+  Local variable can be used anywhere locally on the file.  Method are defined variable by the programer.  Method could also contain local variables as well.
 How do you run a ruby program from the command line?
   First you can start the ruby command line by typing "irb" and type your codes there and test them out.
   Second you
