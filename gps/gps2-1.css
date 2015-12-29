@@ -1,0 +1,44 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+header {
+  background-color: orange;
+  padding: 3em 3em 3em 3em;
+  background-image: url("https://s-media-cache-ak0.pinimg.com/736x/dc/ef/3a/dcef3abedf0e0761203aaeb85886a6f3.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center center;
+}
+
+heaeder > h1 {
+  font-family: sans-serif;
+}
+
+.column-1 {
+  float: left;
+  background-color: green;
+  width: 50%;
+  padding: 3em;
+  box-sizing: border-box;
+}
+
+.column-2 {
+  float: right;
+  width: 50%;
+  background-color: brown;
+  box-sizing: border-box;
+  padding: 3em;
+}
+
+footer {
+  clear: both;
+  background-color: purple;
+  padding: 3em;
+}
+
+code {
+  background-color: lightgray;
+}
