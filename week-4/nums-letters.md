@@ -44,7 +44,7 @@ https://github.com/Aaron1515/phase-0/blob/master/week-4/basic-math.rb
 #Reflection
 
 ##How does Ruby handle addition, subtraction, multiplication, and division of numbers?
-Addition (+)
+Addition (+)<br />
 :>1 + 1
 :>2
 Subtraction (-)
