@@ -45,17 +45,17 @@ https://github.com/Aaron1515/phase-0/blob/master/week-4/basic-math.rb
 
 ##How does Ruby handle addition, subtraction, multiplication, and division of numbers?
 Addition (+)<br />
-:>1 + 1
-:>2
-Subtraction (-)
-:> 2 - 1
-:> 1
-Multiplication (*)
-:> 3 * 3
-:> 9
-Division (/)
-:> 3 / 3
-:> 1
+:>````1 + 1````<br />
+:>````2````<br />
+Subtraction (-)<br />
+:> ````2 - 1````<br />
+:>```` 1````<br />
+Multiplication (*)<br />
+:> ````3 * 3````<br />
+:>```` 9````<br />
+Division (/)<br />
+:>```` 3 / 3````<br />
+:> ````1````<br />
 Ruby handle simple math like a calculator.  For more complex math it could use tan, sin, and you can also create your own method to do math.
 
 ##What is the difference between integers and floats?
