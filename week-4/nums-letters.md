@@ -3,7 +3,7 @@
 
 ##What does puts do?
 
-puts will return nill and print the output to the console and creates a new line, if you are trying to continue the whole out put.  Then you might want to use prints instead of puts.
+````puts```` will print the output to the console and creates a new line, if you are trying to continue the whole out-putting and not skip a line.  Then you might want to use ````prints```` instead of puts.
 
 ##What is an integer? What is a float?
 
@@ -44,7 +44,7 @@ https://github.com/Aaron1515/phase-0/blob/master/week-4/basic-math.rb
 #Reflection
 
 ##How does Ruby handle addition, subtraction, multiplication, and division of numbers?
-Addition (+)
+Addition (+)(br /)
 :>1 + 1
 :>2
 Subtraction (-)
