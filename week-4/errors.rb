@@ -1,7 +1,7 @@
 # Analyze the Errors
 
-# I worked on this challenge [by myself, with: ].
-# I spent [#] hours on this challenge.
+# I worked on this challenge [myself ].
+# I spent [.5] hours on this challenge.
 
 # --- error -------------------------------------------------------
 
@@ -28,7 +28,7 @@
 # 5. Where is the error in the code?
 # The error points the the end of the ruby file.
 # 6. Why did the interpreter give you this error?
-# The method is missing an end of the method.  There is an end to [while], and no end to [def].
+# The method is missing an end of the method.  There is an end to [while], and no end to [def]. This error got a lot of people confused and was looking at line 170.  The error occur in the method and was looking for an end till the end of the script.  So by adding an end to it, it could be corrected.
 
 # --- error -------------------------------------------------------
 
@@ -43,7 +43,7 @@
 # 4. Where is the error in the code?
 # The error is the object known as "south_park".
 # 5. Why did the interpreter give you this error?
-# south_park is undefined variable, method, object.
+# south_park is undefined variable, method, object.  Ruby doesn't know what south_park is because we didn't set sount_park to be defined as anything.
 
 # --- error -------------------------------------------------------
 
@@ -58,7 +58,7 @@
 # 4. Where is the error in the code?
 # The error is cartmen() was setup to be an method with parameters or it was suppose to be using cartman from a method but has no arguement.
 # 5. Why did the interpreter give you this error?
-# There could be 2 possibility Ruby dones't know if "cartman()" is an method or it could be trying to use an method with our any arguments.
+# There could be 2 possibility Ruby dones't know if "cartman()" is an method or it could be trying to use an method without any arguments.
 
 # --- error -------------------------------------------------------
 
@@ -77,7 +77,7 @@
 # 4. Where is the error in the code?
 # Line 69 is calling the method with an agrument. Mainly because ('I hate Kyle') is not needed if you are just tying to call the method.
 # 5. Why did the interpreter give you this error?
-# It gave the error because line 69 has an argument, which isn't needed because the method doesn't have a parameter.
+# It gave the error because line 69 has an argument, which isn't needed because the method doesn't call for a parameter.
 
 # --- error -------------------------------------------------------
 
@@ -117,7 +117,7 @@
 # 4. Where is the error in the code?
 # The error is in "cartmans_lie('A meteor the size of the earth is about to hit Wyoming!')""
 # 5. Why did the interpreter give you this error?
-# The method has two parameters.  When it was called on line 109, there was only one argument instead of two.
+# The method calls for two parameters.  When it was called on line 109, there was only one argument instead of two.
 
 # --- error -------------------------------------------------------
 
@@ -132,7 +132,7 @@
 # 4. Where is the error in the code?
 # "Respect my authoritay!" is where the error is.
 # 5. Why did the interpreter give you this error?
-# It gave an error because you can't multiply a number with a string.
+# It gave an error because you can't multiply a number with a string. In order to correct it, you can use 5.times instead of 5 *.
 
 # --- error -------------------------------------------------------
 
@@ -148,7 +148,7 @@
 # 4. Where is the error in the code?
 # The error is 0.
 # 5. Why did the interpreter give you this error?
-# You can't divide 20/0, so it gave an error.
+# You can't divide 20/0, so it gave an error.  In math there's no such thing as 1/0.
 
 # --- error -------------------------------------------------------
 
@@ -163,7 +163,7 @@
 # 4. Where is the error in the code?
 # The error "/Users/Aaron/DBC-Stuff/phase-0/week-4/cartmans_essay.md"  No known file exist.
 # 5. Why did the interpreter give you this error?
-# There was no such file named "cartmans_essay.md" in the current working directory.
+# There was no such file named "cartmans_essay.md" in the current working directory.  Either the error is that we haven't created the file cartmans_essay.md or the file name is spelled incorrently.
 
 
 # --- REFLECTION -------------------------------------------------------
