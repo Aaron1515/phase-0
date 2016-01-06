@@ -7,15 +7,32 @@ my_family_pets_ages = {"Evi" => 6, "Ditto" => 3, "Hoobie" => 3, "George" => 12, 
 
 # Person 1's solution
 def my_array_finding_method(source, thing_to_find)
-  source # This line is here to make sure all tests initially fail. Delete it when you begin coding.
+  source.select do |word|
+    word.respond_to?('include?') && word.include?(thing_to_find)
+  end
 end
 
 def my_hash_finding_method(source, thing_to_find)
-  source # This line is here to make sure all tests initially fail. Delete it when you begin coding.
+  source.key(thing_to_find)
+  # source.select do |x, y|
+  #   y == (thing_to_find)
+  # end
 end
 
+
 # Identify and describe the Ruby method(s) you implemented.
-#
+# My non refactoring :
+# def my_array_finding_method(source, thing_to_find)
+  # source.each
+  # do |word|
+  #   if word.respond_to?(:include?)
+  #     if word.include?(thing_to_find)
+  #       new_array << word
+      # end
+  #   end
+  # end
+  # new_array
+# end
 #
 #
 

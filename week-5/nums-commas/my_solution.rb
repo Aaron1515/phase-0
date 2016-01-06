@@ -8,13 +8,14 @@
 
 # 0. Pseudocode
 
-# What is the input?
-# What is the output? (i.e. What should the code return?)
-# What are the steps needed to solve the problem?
+# What is the input? separate_comma(1000000)
+# What is the output?  => "1,000,000"
+# What are the steps needed to solve the problem? Take the number and count 3 index starting from behind and add a "," .
 
 
 # 1. Initial Solution
-
+def separate_comma(num)
+end
 
 
 
