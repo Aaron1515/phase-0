@@ -12,8 +12,8 @@
 
 # 0. Pseudocode
 
-# What is the input?
-# What is the output? (i.e. What should the code return?)
+# What is the input? array = [1,2,4,5,3,2,5,3,3,3]
+# What is the output? mode = [3]
 # What are the steps needed to solve the problem?
 
 
@@ -28,3 +28,17 @@
 
 
 # 4. Reflection
+
+
+array = [1,2,4,5,3,2,5,3,3,3]
+
+def mode(ray)
+  hash_brown = {}
+  ray.each do |each_num|
+    hash_brown[each_num] += 1
+  end
+  puts hash_brown
+end
+
+
+mode(array)
