@@ -13,15 +13,20 @@ def my_array_finding_method(source, thing_to_find)
 end
 
 def my_hash_finding_method(source, thing_to_find)
-  source.key(thing_to_find)
-  # source.select do |x, y|
-  #   y == (thing_to_find)
-  # end
+  new_array = []
+  source.select do |key, value|
+    if
+    value == thing_to_find
+      new_array << key
+    end
+  end
+  new_array
 end
 
 
 # Identify and describe the Ruby method(s) you implemented.
 # My non refactoring :
+
 # def my_array_finding_method(source, thing_to_find)
   # source.each
   # do |word|
@@ -34,7 +39,7 @@ end
   # new_array
 # end
 #
-#
+#On my first challenge it didn't respond to fixnum, which give me the biggest challenge ever.  I found a way to make sure if will respond to .include by using a statement that it would respond to .include then passed it with the .include.
 
 # Person 2
 def my_array_modification_method!(source, thing_to_modify)
