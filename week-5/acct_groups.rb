@@ -31,6 +31,9 @@ def fidder_crabs(names)
   # Create a counter for group number, defalt to 1
   counter = 1
 
+  #names.shuffle!
+  #I commented it out because we can choose to shuffle it or not.
+
   #while the list is longer than 8 people, put 5 each in a group.
   while names.length >= 8 do
     names_in_group = names[0..4]
@@ -83,6 +86,10 @@ def fidder_crabs(names)
     everybody[counter] = names_in_group
     counter += 1
     names = names.drop(3)
+  else
+    names.length < 3
+    names_in_group = names[0..1]
+    everybody[counter] = names_in_group
   end
 
   # since we filter by 8, the highest remainder is 7 and the lowest is 3, only 7 and 6 need to be split into 2 groups, while 3 and 4 could be in 1 group by themselfs.
@@ -96,6 +103,7 @@ end
 
 # The most challenging part was thinking of a way to not have 1 or 2 people left in a group.  What if there was a total of 21 people.  They both have a remainder of 1.  If the max group was 4 and 5.  How would that split up.  Having it work in my head wasn't easy to translate into coding.  I ran into a long thinking process on how to translate that to code.
 # The second issues I ran into was having to use an Array inside the method.
+# Third was me using as little build in method as possible.  The only build in method I used was ".length" and ".drop".  Everything is breaking down the math of how to control the remainder of students.
 
 # Do you feel you are improving in your ability to write pseudocode and break the problem down?
 
@@ -113,3 +121,23 @@ end
 
 # Yes, I learned how to put an array inside of the hash.  Mostly I learned how to take things out of an array or hash.  This time around its the reverse of that.  Which made it pretty hard.
 
+# Release 3: Add complexity (OPTIONAL)
+
+
+# If you run this program three times in a row, will the program give you three different outputs?
+
+# It will not give you different results unless you change the order of inputs.
+
+#I commented out the .shuffle part, just in case if someone wants to mix it up and shuffle the names in the groups.
+
+# Should the program store past outputs?
+
+# The code will not store any pass outputs.  You can call the method with puts to store if you like.  We can create a Class with this method and store the past outputs.
+
+# If one person were to leave the cohort, how would the accountability groups change?
+
+# If someone leaves the group, it will not change anything.  My code is not complex enough to excute that.
+
+# How do you decide when you're done? You'll need to decide. This is much more challenging than you probably think, especially since there are no pre-written tests.
+
+#   I know I can imporve on this code with creating more method to take out redunceny but I think I spent enough time on this and not jump into a rabbit hole.
