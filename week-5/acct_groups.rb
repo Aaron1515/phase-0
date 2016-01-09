@@ -18,7 +18,7 @@
 # put in 1 group
 # is there 4?
 # put in 1 group
-# is thre 3?
+# is there 3?
 # put in 1 group
 
 
@@ -90,6 +90,7 @@ def fidder_crabs(names)
     names.length < 3
     names_in_group = names[0..1]
     everybody[counter] = names_in_group
+    names = names.drop(3)
   end
 
   # since we filter by 8, the highest remainder is 7 and the lowest is 3, only 7 and 6 need to be split into 2 groups, while 3 and 4 could be in 1 group by themselfs.
