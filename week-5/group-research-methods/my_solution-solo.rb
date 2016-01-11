@@ -102,8 +102,10 @@ def my_array_deletion_method!(source, thing_to_delete)
   source
 end
 
+
 def my_hash_deletion_method!(source, thing_to_delete)
-source.delete_if { |x, y| x == (thing_to_delete) }
+  #Delete thing_to_delete if it mactch that.
+  source.delete_if {|name, kids|name == thing_to_delete}
 end
 
 # Identify and describe the Ruby method(s) you implemented.
@@ -114,24 +116,51 @@ end
 
 
 # Person 5
+# def my_array_splitting_method(source)
 
-def my_array_splitting_method(input)
-  integer_array = input.select{|element| element.to_s[/\d/]}
-  other_values_array = input.select {|element| element.to_s[/\D/]}
-return [integer_array,other_values_array]
+  #Each number in b,
+  nums = Array.new
+  strings = Array.new
+
+  source.each do |item|
+  #If it is a number puts it in the first array,
+    if item.is_a? Integer
+      nums << item
+  #if it is a string put it in the 2nd array
+    elsif item.is_a? String
+      strings << item
+  #then combine he 2 array and nest it inside of 1 array.
+    end
+  end
+  [nums] + [strings]
 end
 
-def my_hash_splitting_method(pets_ages, cutoff_age)
-  new_array = []
-  under_age_array = []
-  over_age_array = []
-  hash_into_array = pets_ages.each {|pet, age| new_array << [pet,age]}
-  hash_into_array.each do |animal|
-    if animal[1] <= cutoff_age; under_age_array << animal
-    else over_age_array << animal
+# Refactoring:
+
+# def a(b)
+#   nums = b.select{ |item| item.is_a? Integer }
+#   strs = b.select{ |item| item.is_a? String }
+#   [nums, strs]
+# end
+
+
+def my_hash_splitting_method(source, age)
+  groups = [[],[]]
+  #ask the kid their name and age
+  source.each do |key, value|
+  #then if they are under the age requirement, put them in a corner
+    if value <= age
+      groups[0] << [key, value]
+  # the rest of the kids put them in another corner
+    else
+      groups[1] << [key, value]
+  # then put call the first group , group 1,
+  #   then call the 2nd group , group 2
     end
-    end
-    return [under_age_array,over_age_array]
+  #     then combine them to gether.
+
+  end
+  groups
 end
 
 # Identify and describe the Ruby method(s) you implemented.
