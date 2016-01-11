@@ -31,8 +31,8 @@ def fidder_crabs(names)
   # Create a counter for group number, defalt to 1
   counter = 1
 
-  #names.shuffle!
-  #I commented it out because we can choose to shuffle it or not.
+  names.shuffle
+  #Mix it up.!!!!!
 
   #while the list is longer than 8 people, put 5 each in a group.
   while names.length >= 8 do
@@ -94,7 +94,7 @@ def fidder_crabs(names)
   end
 
   # since we filter by 8, the highest remainder is 7 and the lowest is 3, only 7 and 6 need to be split into 2 groups, while 3 and 4 could be in 1 group by themselfs.
-  return everybody
+  everybody
   #Return the hash of everybody in their group number with their names.
 end
 

@@ -23,7 +23,7 @@ class Die
   def initialize(sides)
     #Create argumenterror, respond with argument error
     if sides < 1
-      raise ArgumentError.new('ArgumentError')
+      raise ArgumentError.new('Wrong number of side silly.')
     end
     @sides = sides
   end
@@ -63,7 +63,7 @@ end
 
 # What is an ArgumentError and why would you use one?
 
-# Argument error is used to let user know that it can't except or skip steps inorder to use the class.  Pretty much to prevent issues with the crated Class.
+# Argument error is used to let user know that is the wrong argument.  It also helps prevent to the code from breaking.
 
 
 # What new Ruby methods did you implement? What challenges and successes did you have in implementing them?
@@ -72,17 +72,17 @@ end
 
 # What is a Ruby class?
 
-# Class is an instance you can create.  Such as creating a Class of tree and you can add types of trees, height, and add height to it at a later time as long as you are in the same instance of that class.  You can also create new methods within that class instance.
+#
 
 # Why would you use a Ruby class?
 
-# One example of using ruby class is if you are creating a game.  You ask the user for its user name, name, last name, type of charater, and so forth.  And you want to use it for the next user with out typing another set of codes for the 2nd user.  The class could be used over and over again.
+#
 
 
 # What is the difference between a local variable and an instance variable?
 
-# Local variable could be used within the the session.  An instance veriable could only be used in the instance while you're with in the class instance.
+#
 
 # Where can an instance variable be used?
 
-# An instance variable could be used with in the Class instance.  Once you exit out the class instance that you are in, the variable are no longer saved or valid.
+#
