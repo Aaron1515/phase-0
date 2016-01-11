@@ -71,18 +71,21 @@ end
 # The  new argument error was the first time I have used it.   This is also the first time I created a Class method as well.  I'm still fuzzy about class but in due time as I create more class I will beable to learn and be comforable with it.
 
 # What is a Ruby class?
-
+# Ruby class is like a blue print of something youre building.  Like a blue print for a house.  A blue print for an orange, like a round ball that does or doesn't have a defined size or color.  After creating a the class.  You can build multiply things with a class just like a blue print of something you create.
 #
 
 # Why would you use a Ruby class?
 
-#
+#You would wan to build a class because you want to be efficient with your codes.  Such as if you where building a game.  You need to ask the user their name, username, email, age, and etc.  You don't want to write a code for each time a new player joins the game.  You can use a ruby class(blueprint) to ask the user all the information each time a new user joins the game.
 
 
 # What is the difference between a local variable and an instance variable?
 
+# Instance variable start with an @ sign.  It could be used with in the class.  It could be used within a method and disappear.  It could be reused for a later time.  It could also store data, such as every time you add 5 dollar to a piggy bank.  Each time you run something you can add to it if you have a method setup for it.
+
+# A local variable only exsist within the method.  It can't be shared with another method.
 #
 
 # Where can an instance variable be used?
 
-#
+#A instance can be used within a instance for this excercise.
