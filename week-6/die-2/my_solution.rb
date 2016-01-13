@@ -25,10 +25,27 @@
 
 # Initial Solution
 
+# class Die
+#   attr_reader :labels
+#   def initialize(labels)
+#     if labels == []
+#       raise ArgumentError.new('I need more than an array that has something in it.')
+#     end
+#     @labels = labels
+#   end
 
+#   def sides
+#     labels.length
+#   end
+#   def roll
+#     labels.sample
+#   end
+# end
 
 
 # 4. Refactored Solution
+
+
 
 class Die
   def initialize(labels)
@@ -44,7 +61,6 @@ class Die
     @labels.sample
   end
 end
-
 
 # Reflection
 
