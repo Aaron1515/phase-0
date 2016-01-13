@@ -97,5 +97,19 @@ end
 
 # Reflection
 =begin
+How do instance variables and methods represent the characteristics and behaviors (actions) of a real-world object?
 
+  I used attr_accessor for our guessing game that will read and write to the class we re calling.  Its like a bank account, Where you want your balance to change when you make a deposit or withdraw.  Some might not want to change balance when we go to an ATM to withdraw but it doesn’t work that way.
+
+When should you use instance variables? What do they do for you?
+
+  Instance variable are used within a method and disappear.  There are times when you don’t need to keep the variables around when you don’t need to keep that bit of information such as just passing a ‘true’ or ‘false’ information.
+
+Explain how to use flow control. Did you have any trouble using it in this challenge? If so, what did you struggle with?
+
+  I ran into some issues with keeping the stored info with the guessing number but I got that cleared up during office hours. It was a way to keep the number after it has been passed as true.
+
+Why do you think this code requires you to return symbols? What are the benefits of using symbols?
+
+  You can’t change a symbol unlike a string or an integer.  So the key will stay the same.
 =end
