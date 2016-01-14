@@ -60,30 +60,34 @@ end
 # ------------------------------------------------------
 # What are these methods doing?
 # ------------------------------------------------------
-#   attr_reader :age
 
-#   is replacing
+#   def change_my_age=(new_age)
+#     @age = new_age
+#   end
+#   def change_my_name=(new_name)
+#     @name = new_name
+#   end
+#   def change_my_occupation=(new_occupation)
+#     @occupation = new_occupation
+#   end
 
-#   #this code is no longer needed.
-#   # def what_is_age
-#   #   @age
-#   # end
+# These methods are setting new values and replacding the default values set in the itintalize.
 
-# The "attr_reader :age" is the same has writing the long drawn out way to make the method.  Its just a refactoring of the method.
 
 # ------------------------------------------------------
 # How are they modifying or returning the value of instance variables?
 # ------------------------------------------------------
-# Another way of writing the following
-# "attr_reader :age"
 
-# is the same as
+    # @age = 27
+    # @name = "Kim"
+    # @occupation = "Cartographer"
 
-# def age
-#   @age
-# end
+    # Are the default or starting values of age, name and occupations.
 
-# .age will return the age so .what_is_name isn't going to be used any longer
+    # When using .change_my_age, .change_my_name, and .change_my_occupation.
+    # We are able to replace the values of those 3.
+
+
 
 
 
@@ -102,35 +106,32 @@ end
 # What changed between the last release and this release?
 # ------------------------------------------------------
 
-# This code was commented out.
-#   # This code is no longer needed
-#   # def change_my_age=(new_age)
-#   #   @age = new_age
-#   # end
+# Nothing on the output was changed.  Only the coding was changed.
 
-# This code has been added.
-#   attr_writer :age
 
-# Indeed of using “.change_my_age” to update the age, you will need to update age by using “.age = [new age here]” instead.
 
 # ------------------------------------------------------
 # What was replaced?
 # ------------------------------------------------------
 
-# This code was commented out.
-#   # This code is no longer needed
-#   # def change_my_age=(new_age)
-#   #   @age = new_age
-#   # end
+#   attr_reader :age
 
-# This code is the replacement.
-#   attr_writer :age
+#   is replacing
+
+#   #this code is no longer needed.
+#   # def what_is_age
+#   #   @age
+#   # end
 
 # ------------------------------------------------------
 # Is this code simpler than the last?
 # ------------------------------------------------------
 
-# This is starting to make sense after seeing it for the 2nd time around.  But I do perfer the old way better because it’s broken down to English more where a normal human can understand if they are looking at the code.  If the code was private then having the attr would be better.
+# The code is simpler from a coder stand point but confusing at the first glance from a non-coder.
+# Maybe a few more times it will start to come together.
+
+
+
 
 
 
@@ -148,21 +149,7 @@ end
 # What changed between the last release and this release?
 # ------------------------------------------------------
 
-# This code was commented out.
-#   # This code is no longer needed.
-#   # def what_is_age
-#   #   @age
-#   # end
-
-#   # This code is no longer needed
-#   # def change_my_age=(new_age)
-#   #   @age = new_age
-#   # end
-
-# This code has been added.
-#   attr_accessor :age
-
-# Indeed of using “.change_my_age” or ".what_is_age" to update and view the age.  Now you can use “.age = [new age here]” or ".age" to change age and view age.
+# Nothing on the output was changed from the last release.  Using “.change_my_age” or ".what_is_age" to update and view the age.  Now you can use “.age = [new age here]” or ".age" to change age and view age.
 
 # ------------------------------------------------------
 # What was replaced?
@@ -179,14 +166,15 @@ end
 #   #   @age = new_age
 #   # end
 
-# This code is the replacement.
-#   attr_accessor :age
+# This code has been added.
+  # attr_reader :age
+  # attr_writer :age
 
 # ------------------------------------------------------
 # Is this code simpler than the last?
 # ------------------------------------------------------
 
-# This is starting to make sense after seeing it for the 3nd time around.  But I do perfer the old way better because it’s broken down to English more where a normal human can understand if they are looking at the code.  If the code was private then having the attr would be better.
+# This is starting to make sence after seeing it for the 2nd time around.  But I do perfer the old way better because it’s broken down to English more where a normal human can understand if they are looking at the code.  If the code was private then having the attr would be better.
 
 
 
