@@ -2,8 +2,8 @@
 # Build a simple guessing game
 
 
-# I worked on this challenge [by myself, with: ].
-# I spent [#] hours on this challenge.
+# I worked on this challenge [myself].
+# I spent [3] hours on this challenge.
 
 # Pseudocode
 

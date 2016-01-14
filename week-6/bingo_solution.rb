@@ -9,17 +9,31 @@
 # Create a method to generate a letter ( b, i, n, g, o) and a number (1-100)
   #fill in the outline here
 
+  #Create an ARRAY that contain "b", "i", "n", "g", "o"
+  #Create an ARRAY of ranges.
+
+  #Create a method that will generate a letter and number.
+
+
 # Check the called column for the number called.
   #fill in the outline here
+
+  #Create a method that check by colum b, i, n, g, o
+  #Create a method that will check that column for the random generated number.
 
 # If the number is in the column, replace with an 'x'
   #fill in the outline here
 
+  #Create a method that could replaced X with number found.
+
 # Display a column to the console
   #fill in the outline here
 
+  #Create a method called SHOW_BOARD to display the current board.
+
 # Display the board to the console (prettily)
   #fill in the outline here
+  # Display the best freaking looking board.
 
 # Initial Solution
 
