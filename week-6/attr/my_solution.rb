@@ -31,7 +31,7 @@ class Greetings
     @name_data = NameData.new(name)
   end
   def hello
-    puts "Hello #{@name_data.name}! How wonderful to see you today."
+    puts "Hello #{name_data.name}! How wonderful to see you today."
   end
 end
 
@@ -47,6 +47,7 @@ end
 # "Aaron"
 # #<Greetings:0x00000001d49cd8 @name_data=#<NameData:0x00000001d49cb0 @name="Byron">>
 # Hello Byron! How wonderful to see you today.
+
 
 
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++
