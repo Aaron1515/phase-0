@@ -148,6 +148,16 @@ end
 # Reflection
 
 
-What was the most difficult part of this challenge for you and your pair?
-What new methods did you find to help you when you refactored?
-What concepts or learnings were you able to solidify in this challenge?
+# What was the most difficult part of this challenge for you and your pair?
+
+# It was very time consuming when we iterating everything manually by calling each index one by one.
+
+# Writing pseudo code for this was pretty intense because we kept converting it from string to fixnum and fixnum to string then string to fixnum again.
+
+# What new methods did you find to help you when you refactored?
+
+# We used .each_with_index to help refactored our manual iterating.
+
+# What concepts or learnings were you able to solidify in this challenge?
+
+# We practically did everything manually and the longest way possible in the world.  But when we were doing the refactoring we are able to cut things down to fewer lines.  Maybe doing it the hard and long way was the best way and don't worry about having things in fewer lines till we are doing refactoring.
