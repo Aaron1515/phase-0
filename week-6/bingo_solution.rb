@@ -172,8 +172,6 @@ class BingoBoard
 def initialize(board)
     raise ArgumentError.new ('We need a legit board, not the Craigelist\'s Version.') unless board.flatten.length == 25
 
-
-    @board = board
     @b = []
     @i = []
     @n = []

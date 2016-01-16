@@ -37,7 +37,6 @@ class TrueBingoBoard
 
   def draw
     print random_letter = ["B", "I", "N", "G", "O"].sample
-
     case random_letter
     when "B"
       puts random_number = (1..15).to_a.shuffle.first
@@ -65,7 +64,7 @@ class TrueBingoBoard
       num == random_number ? num = "XX" : num
       end
     end
-    puts bingo_board
+    bingo_board
     win_yet
   end
 
@@ -95,19 +94,18 @@ class TrueBingoBoard
   end
 
   def win_yet
-    if
-      @b.include?("XX") && @i.include?("XX") && @n.include?("XX") && @g.include?("XX") && @o.include?("XX")
+    if #roll win
+  @b[0] == "XX" && @i[0] == "XX" && @n[0] == "XX" && @g[0] == "XX" && @o[0] == "XX" || @b[1] == "XX" && @i[1] == "XX" && @n[1] == "XX" && @g[1] == "XX" && @o[1] == "XX" || @b[2] == "XX" && @i[2] == "XX" && @n[2] == "XX" && @g[2] == "XX" && @o[2] == "XX" || @b[3] == "XX" && @i[3] == "XX" && @n[3] == "XX" && @g[3] == "XX" && @o[3] == "XX" || @b[4] == "XX" && @i[4] == "XX" && @n[4] == "XX" && @g[4] == "XX" && @o[4] == "XX"
       won
-
-    elsif
+    elsif #column win
       @b == ["XX","XX","XX","XX","XX"] || @i == ["XX","XX","XX","XX","XX"] || @n == ["XX","XX","XX","XX","XX"] || @g == ["XX","XX","XX","XX","XX"] || @o == ["XX","XX","XX","XX","XX"]
       won
-    elsif
+    elsif #X win
       @b[0] == "XX" && @i[1] == "XX" && @n[2] == "XX" && @g[3] == "XX" && @o[4] == "XX" || @b[4] == "XX" && @i[3] == "XX" && @n[2] == "XX" && @g[1] == "XX" && @o[0] == "XX"
-
+      won
     else
-      ask
       puts "In order to exit the game you need to get a win."
+      ask
     end
   end
 
@@ -136,6 +134,7 @@ class TrueBingoBoard
     puts " \\        / (  <_> )|   |  \\                      "
     puts "  \\__/\\  /   \\____/ |___|  /                     "
     puts "       \\/                \\/                       "
+
   end
 
 end
