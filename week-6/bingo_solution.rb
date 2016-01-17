@@ -158,86 +158,81 @@
 
 # Refactored Solution
 
-bingo_board = [[47, 44, 71, 8, 88],
-               [22, 69, 75, 65, 73],
-               [83, 85, 97, 89, 57],
-               [25, 31, 96, 68, 51],
-               [75, 70, 54, 80, 83]]
 
 class BingoBoard
 
-  attr_reader :letter
-  attr_reader :number
-
 def initialize(board)
-    raise ArgumentError.new ('We need a legit board, not the Craigelist\'s Version.') unless board.flatten.length == 25
-
-    @b = []
-    @i = []
-    @n = []
-    @g = []
-    @o = []
-    board.map do |x|
-      @b << x[0]
-      @i << x[1]
-      @n << x[2]
-      @g << x[3]
-      @o << x[4]
-    end
-end
-
+    @b = board[0][0],board[1][0],board[2][0],board[3][0],board[4][0]
+    @i = board[0][1],board[1][1],board[2][1],board[3][1],board[4][1]
+    @n = board[0][2],board[1][2],board[2][2],board[3][2],board[4][2]
+    @g = board[0][3],board[1][3],board[2][3],board[3][3],board[4][3]
+    @o = board[0][4],board[1][4],board[2][4],board[3][4],board[4][4]
+  end
 
 def call
+
   @letter = ["B","I","N","G","O"].sample
   @number = rand(1..100)
   puts
-  puts "Our number is #{letter}#{number}"
-  case @letter
-    when "B"
-    @b = @b.map do |something|
-     something == @number ? something = "X" : something
-    end
-    when "I"
-    @i = @i.map do |something|
-     something == @number ? something = "X" : something
-    end
-    when "N"
-    @n = @n.map do |something|
-      something == @number ? something = "X" : something
-    end
-    when "G"
-    @g = @g.map do |something|
-      something == @number ? something = "X" : something
-    end
-    when "O"
-    @o.map do |something|
-     something == @number ? something = "X" : something
-    end
+  puts "Our number is #{@letter}#{@number}!"
+
+  @letter =
+      if "B" then @b = @b.map { |row| row == @number? row = "X" : row}
+      elsif "I" then @i = @i.map { |row| row == @number? row = "X" : row}
+      elsif "N" then @n = @n.map { |row| row == @number? row = "X" : row}
+      elsif "G" then  @g = @g.map { |row|  row == @number? row = "X" : row}
+      elsif "O" then @o = @o.map {|row| row == @number? row = "X" : row}
+      end
+
+    puts
+    print "Your result after the call:"
+    puts
+    puts
+  end
+
+  def check
+    puts "#{@b[0]} | #{@i[0]} | #{@g[0]} | #{@n[0]} | #{@o[0]}"
+    puts "#{@b[1]} | #{@i[1]} | #{@g[1]} | #{@n[1]} | #{@o[1]}"
+    puts "#{@b[2]} | #{@i[2]} | #{@g[2]} | #{@n[2]} | #{@o[2]}"
+    puts "#{@b[3]} | #{@i[3]} | #{@g[3]} | #{@n[3]} | #{@o[3]}"
+    puts "#{@b[4]} | #{@i[4]} | #{@g[4]} | #{@n[4]} | #{@o[4]}"
   end
 end
 
-def check
-  print @b
-  puts
-  puts "--------------------"
-  print @i
-  puts
-  puts "--------------------"
-  print @n
-  puts
-  puts "--------------------"
-  print @g
-  puts
-  puts "--------------------"
-  print @o
-  puts
-end
+bingo_board = ([[47, 44, 71, 8, 88],
+               [22, 69, 75, 65, 73],
+               [83, 85, 97, 89, 57],
+               [25, 31, 96, 68, 51],
+               [75, 70, 54, 80, 83]])
 
-end
 
 # driver codes.
 # new_game = BingoBoard.new(bingo_board)
 
+# new_game.call
+# new_game.call
+# new_game.call
+# new_game.call
+# new_game.call
+# new_game.call
+# new_game.call
+# new_game.call
+# new_game.call
+# new_game.call
+# new_game.call
+# new_game.call
+# new_game.call
+# new_game.call
+# new_game.call
+# new_game.call
+# new_game.call
+# new_game.call
+# new_game.call
+# new_game.call
+# new_game.call
+# new_game.call
+# new_game.call
+# new_game.call
 # new_game.check
 
 
@@ -429,6 +424,8 @@ class TrueBingoBoard
   end
 
 end
+
+#tester coes.
 # aaron = TrueBingoBoard.new
 
 
