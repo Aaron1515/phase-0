@@ -28,11 +28,21 @@ while (range != 101) {
   range = range +1
 }
 
+
+//And the Triangle
+var pound_it = ""
+while (pound_it.length < 8){
+ pound_it +="#"
+ console.log(pound_it);
+}
+
 // Functions
 
 // Complete the `minimum` exercise.
 
-
+function min(frist_num, second_num){
+  return Math.min(frist_num, second_num);
+}
 
 // Data Structures: Objects and Arrays
 // Create an object called "me" that stores your name, age, 3 favorite foods, and a quirk below.
