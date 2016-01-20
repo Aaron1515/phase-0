@@ -17,19 +17,19 @@ var terah = {
 // Write your code below.
 var  adam = {
   name: "Adam"
-}
-terah.spouse = adam
-terah.weight = 125
-terah.eyeColor = undefined
-terah.spouse.spouse = terah
-terah.children = {}
-terah.children.carson = {}
-terah.children.carson.name = 'Carson'
-terah.children.carter = {}
-terah.children.carter.name = 'Carter'
-terah.children.colton = {}
-terah.children.colton.name = 'Colton'
-adam.children = terah.children
+};
+terah.spouse = adam;
+terah.weight = 125;
+terah.eyeColor = undefined;
+terah.spouse.spouse = terah;
+terah.children = {};
+terah.children.carson = {};
+terah.children.carson.name = 'Carson';
+terah.children.carter = {};
+terah.children.carter.name = 'Carter';
+terah.children.colton = {};
+terah.children.colton.name = 'Colton';
+adam.children = terah.children;
 
 
 
