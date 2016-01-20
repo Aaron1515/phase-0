@@ -71,17 +71,51 @@ end
 
 
 alabama = VirusPredictor.new("Alabama", STATE_DATA["Alabama"][:population_density], STATE_DATA["Alabama"][:population])
-alabama.virus_effects
+p alabama.virus_effects
 
-jersey = VirusPredictor.new("New Jersey", STATE_DATA["New Jersey"][:population_density], STATE_DATA["New Jersey"][:population])
-jersey.virus_effects
+# jersey = VirusPredictor.new("New Jersey", STATE_DATA["New Jersey"][:population_density], STATE_DATA["New Jersey"][:population])
+# jersey.virus_effects
 
-california = VirusPredictor.new("California", STATE_DATA["California"][:population_density], STATE_DATA["California"][:population])
-california.virus_effects
+# california = VirusPredictor.new("California", STATE_DATA["California"][:population_density], STATE_DATA["California"][:population])
+# california.virus_effects
 
-alaska = VirusPredictor.new("Alaska", STATE_DATA["Alaska"][:population_density], STATE_DATA["Alaska"][:population])
-alaska.virus_effects
+# alaska = VirusPredictor.new("Alaska", STATE_DATA["Alaska"][:population_density], STATE_DATA["Alaska"][:population])
+# alaska.virus_effects
 
 
 #=======================================================================
 # Reflection Section
+
+
+
+
+
+
+class VirusPredictor
+
+  def initialize(state_of_origin, population_density, population)
+    @state = state_of_origin
+    @population = population
+    @population_density = population_density
+  end
+
+  def virus_effects
+    predicted_deaths(@population_density, @population, @state)
+    speed_of_spread(@population_density, @state)
+
+  end
+
+  private
+
+  def predicted_deaths(population_density, population, state)
+    @population_density >= 200 ? number_of_deaths = (@population * 0.4).floor : @population_density >= 150 ? number_of_deaths = (@population * 0.3).floor : @population_density >= 100 ? number_of_deaths = (@population * 0.2).floor : @population_density >= 50 ? number_of_deaths = (@population * 0.1).floor : (@population * 0.05).floor
+    print "#{@state} will lose #{number_of_deaths} people in this outbreak"
+  end
+
+  def speed_of_spread(population_density, state) #in months
+    speed = 0.0
+    @population_density >= 200 ? speed += 0.5 : @population_density >= 150 ? speed += 1 : @population_density >= 100 ? speed += 1.5 : @population_density >= 50 ? speed += 2 : speed += 2.5
+    puts " and will spread across the state in #{speed} months."
+  end
+
+end
