@@ -1,10 +1,20 @@
 // Separate Numbers with Commas in JavaScript **Pairing Challenge**
 
 
-// I worked on this challenge with: .
+// I worked on this challenge with: with Sanderfer Chau
 
 // Pseudocode
-//separateComma(1569743) == "1,569,743"
+// Take a large number and add commas
+// take the NUMBER and turn it into a STRING, SEPARATE IT, REVERSE IT, AND JOIN IT BACK TOGETHER
+// the number now should be reversed.
+//
+// create an empty container called CorrectNumber
+// take the last three and add a comma to it and insert it to the container
+// subtract the first 3 from the Revsered number
+// Do this till the LENGTH of the number is 4 or less.
+// Then add the rest of the numbers to the empty container if there is any.
+//
+//Take the empty contrainer, JOIN it together, SEPARATE IT, REVERSE IT, JOIN IT.  Then call it.
 
 
 
