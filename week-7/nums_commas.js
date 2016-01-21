@@ -51,17 +51,11 @@
 // corNum.push(revNum.substring(0,3));
 
 
-
 // corNum = corNum.join("");
 // corNum = corNum.split("").reverse();
 // corNum = corNum.join("")
-
 // console.log(corNum)
-
-
 // };
-
-
 
 // //Driver code
 // seprateComma(number);
@@ -72,9 +66,7 @@
 
 function seprateComma(num) {
 
-  num = num.toString().split("").reverse().join("");
-
-  var revNum = num;
+  var revNum = num.toString().split("").reverse().join("");
   var corNum = [];
 
   for ( ; revNum.length >= 4;){
@@ -89,16 +81,10 @@ function seprateComma(num) {
 };
 
 
-
-
-
-
-
 // Your Own Tests (OPTIONAL)
 
 //Driver code
 seprateComma(123456111117189);
-
 
 // Reflection
 
