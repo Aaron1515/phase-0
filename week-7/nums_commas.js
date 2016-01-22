@@ -69,7 +69,7 @@ function seprateComma(num) {
   var revNum = num.toString().split("").reverse().join("");
   var corNum = [];
 
-  for ( ; revNum.length >= 4;){
+  while (revNum.length >= 4){
     corNum.push(revNum.substring(0,3) + ",");
     revNum = (revNum.slice(3));
     }
@@ -104,4 +104,4 @@ seprateComma(123456111117189);
 
 // What built-in methods did you find to incorporate in your refactored solution?
 
-//   I used the for loop.  Instead of using the whole 3 argument of the for loop I only used the middle condition of the for loop which made it work.  I was fuzzy about knowing how to use the FOR loop but I was able to get some clarification on it.
+//   I used the WHILE loop to loop through the Array I setup for the numbers.
