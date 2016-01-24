@@ -1,13 +1,33 @@
-
 // Add the finished solution here when you receive it.
-// function sum(array) {
- // var total = 0;
- // for (var i = 0; i < array.length; i++){
- //   total = total + array[i];
- // }
- // return total;
-// }
+function sum(array) {
+ var total = 0;
+ for (var i = 0; i < array.length; i++){
+   total += array[i];
+ }
+ return total;
+};
 
+function mean(array) {
+ var total = 0;
+ for (var i = 0; i < array.length; i++){
+   total += array[i];
+ }
+ return total/(array.length);
+}
+
+function median(array) {
+ function sortNumber(a,b) {
+   return a - b;
+ }
+ var len = array.length;
+ var array_sort = array.sort(sortNumber);
+ if (array.length % 2 === 0) {
+   return (array_sort[(len - 2)/2] + array_sort[(len)/2]) / 2;
+ }
+ else {
+   return array_sort[(len - 1)/2];
+ }
+}
 // __________________________________________
 // Tests:  Do not alter code below this line.
 
