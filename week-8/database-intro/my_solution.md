@@ -18,12 +18,15 @@ A foreign key is used to link the relationship between the primary key to the 2n
 
 To select information from SQL, you must use the command "SELECT" and "FROM" to select from a database.  SELECT calls for the roll name and FROM select from the table you're selecting from.  The 3rd item is if you are looking for conditions which will make things sorting out easier.
 
-<hr>
 
+##One to One
 ![Screenshot of SQL DESIGN](../imgs/sql_design.png)
 
-<hr>
+##One to Many
 
+![Screenshot of SQL DESIGN](../imgs/sql_one_to_many.png)
+
+<hr>
 RELEASE 5:
 1.
 SELECT * FROM states;
