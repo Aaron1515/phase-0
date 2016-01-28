@@ -20,10 +20,11 @@ To select information from SQL, you must use the command "SELECT" and "FROM" to 
 
 
 ##One to One
+One to one is a relation to the next as an extenstion of the first table.  Where that person has only 1 outfit.
 ![Screenshot of SQL DESIGN](../imgs/sql_design.png)
 
 ##One to Many
-
+One to many is an extension where someone could have more than one car.
 ![Screenshot of SQL DESIGN](../imgs/sql_one_to_many.png)
 
 <hr>
