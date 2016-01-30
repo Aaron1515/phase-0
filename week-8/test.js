@@ -27,7 +27,6 @@ var votes = {
   "Zane": { president: "Louise", vicePresident: "Hermann", secretary: "Fred", treasurer: "Mary" }
 }
 
-// Tally the votes in voteCount.
 var voteCount = {
   president: {},
   vicePresident: {},
@@ -35,18 +34,7 @@ var voteCount = {
   treasurer: {}
 }
 
-
-// for (var name in votes){
-//   console.log(votes[name]['president']);
-//   if (voteCount['president'][votes[name]['president']] === undefined){
-//   voteCount['president'][votes[name]['president']] = 1
-//   } else {
-//   voteCount.president[votes[name]['president']] += 1
-//   }
-// }
-
 for (var name in votes){
-  // console.log(votes[name]['president']);
   for (var title in voteCount){
     if (voteCount[title][votes[name][title]] === undefined){
       voteCount[title][votes[name][title]] = 1
@@ -61,4 +49,71 @@ var officers = {
   vicePresident: undefined,
   secretary: undefined,
   treasurer: undefined
+}
+
+//for winner in officers
+for (var higestVote in officers['president']){console.log(officers['president'][higestVote])}
+
+
+0
+
+
+//to get numbers in voteCount
+for (var danames in voteCount['president']){ console.log(voteCount['president'][danames])
+}
+
+//compare
+for (var runningFor in voteCount){
+  var counter = 0;
+  for (var canidates in voteCount[runningFor]){
+    var allVotes = voteCount[runningFor][canidates];
+      if (counter < allVotes){
+        counter = allVotes;
+        officers[runningFor] = canidates;
+      }
+  };
+};
+
+
+//refactoring
+for (var runningFor in voteCount){
+  var counter = 0;
+  for (var canidates in voteCount[runningFor]){
+    // var allVotes = voteCount[runningFor][canidates];
+      if (counter < voteCount[runningFor][canidates]){
+        counter = voteCount[runningFor][canidates];
+        officers[runningFor] = canidates;
+      }
+  };
+};
+
+
+
+
+
+
+
+
+//Driver Code
+console.log(officers)
+
+
+
+
+
+
+for (var winner in officers){
+  // officers[winner] = {starting}
+  for (var canidates in voteCount.president){
+    if voteCount['president'][canidates] > officers['president'][winner];
+    officers['president'] = voteCount[canidates];
+  }
+}
+
+for (var contest in voteCount['president']){console.log(contest)}
+
+
+for (var namesInPresident in voteCount['president']){
+  for (var totalVote in voteCount['president'][namesInPresident]){
+    console.log(voteCount(voteCount['president'][namesInPresident][totalVote])}
 }
