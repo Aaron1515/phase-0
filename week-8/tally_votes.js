@@ -74,57 +74,78 @@ var officers = {
 
 // __________________________________________
 // Initial Solution
-for (var name in votes){
-  // console.log(votes[name]['president']);
-  if (voteCount['president'][votes[name]['president']] === undefined){
-  voteCount['president'][votes[name]['president']] = 1
-  } else {
-  voteCount.president[votes[name]['president']] += 1
-  }
-}
+// for (var name in votes){
+//   // console.log(votes[name]['president']);
+//   if (voteCount['president'][votes[name]['president']] === undefined){
+//   voteCount['president'][votes[name]['president']] = 1
+//   } else {
+//   voteCount.president[votes[name]['president']] += 1
+//   }
+// }
 
-for (var name in votes){
-  // console.log(votes[name]['vicePresident']);
-  if (voteCount['vicePresident'][votes[name]['vicePresident']] === undefined){
-  voteCount['vicePresident'][votes[name]['vicePresident']] = 1
-  } else {
-  voteCount.vicePresident[votes[name]['vicePresident']] += 1
-  }
-}
+// for (var name in votes){
+//   // console.log(votes[name]['vicePresident']);
+//   if (voteCount['vicePresident'][votes[name]['vicePresident']] === undefined){
+//   voteCount['vicePresident'][votes[name]['vicePresident']] = 1
+//   } else {
+//   voteCount.vicePresident[votes[name]['vicePresident']] += 1
+//   }
+// }
 
-for (var name in votes){
-  // console.log(votes[name]['secretary']);
-  if (voteCount['secretary'][votes[name]['secretary']] === undefined){
-  voteCount['secretary'][votes[name]['secretary']] = 1
-  } else {
-  voteCount.secretary[votes[name]['secretary']] += 1
-  }
-}
+// for (var name in votes){
+//   // console.log(votes[name]['secretary']);
+//   if (voteCount['secretary'][votes[name]['secretary']] === undefined){
+//   voteCount['secretary'][votes[name]['secretary']] = 1
+//   } else {
+//   voteCount.secretary[votes[name]['secretary']] += 1
+//   }
+// }
 
-for (var name in votes){
-  // console.log(votes[name]['treasurer']);
-  if (voteCount['treasurer'][votes[name]['treasurer']] === undefined){
-  voteCount['treasurer'][votes[name]['treasurer']] = 1
-  } else {
-  voteCount.treasurer[votes[name]['treasurer']] += 1
-  }
-}
+// for (var name in votes){
+//   // console.log(votes[name]['treasurer']);
+//   if (voteCount['treasurer'][votes[name]['treasurer']] === undefined){
+//   voteCount['treasurer'][votes[name]['treasurer']] = 1
+//   } else {
+//   voteCount.treasurer[votes[name]['treasurer']] += 1
+//   }
+// }
 
+//compare
+// for (var runningFor in voteCount){
+//   var counter = 0;
+//   for (var canidates in voteCount[runningFor]){
+//     var allVotes = voteCount[runningFor][canidates];
+//       if (counter < allVotes){
+//         counter = allVotes;
+//         officers[runningFor] = canidates;
+//       }
+//   };
+// };
 
 
 // __________________________________________
 // Refactored Solution
 
-// for (var name in votes){
-//   for (var title in voteCount){
-//     if (voteCount[title][votes[name][title]] === undefined){
-//       voteCount[title][votes[name][title]] = 1
-//     } else {
-//       voteCount[title][votes[name][title]] += 1;
-//     }
-//   }
-// }
+for (var name in votes){
+  for (var title in voteCount){
+    if (voteCount[title][votes[name][title]] === undefined){
+      voteCount[title][votes[name][title]] = 1
+    } else {
+      voteCount[title][votes[name][title]] += 1;
+    }
+  }
+}
 
+for (var runningFor in voteCount){
+  var counter = 0;
+  for (var canidates in voteCount[runningFor]){
+    // var allVotes = voteCount[runningFor][canidates];
+      if (counter < voteCount[runningFor][canidates]){
+        counter = voteCount[runningFor][canidates];
+        officers[runningFor] = canidates;
+      }
+  };
+};
 
 
 
@@ -132,6 +153,18 @@ for (var name in votes){
 // Reflection
 
 
+// What did you learn about iterating over nested objects in JavaScript?
+
+// I learned a new method using “for (name in voteCount[‘president’]) a new way to iterate over names.  It gets confusing when its so nested in the object.  Somewhat hard to keep track of where things are going.
+
+// Were you able to find useful methods to help you with this?
+
+// Yes, through trial and error and back and forth I was able to get the challenge done.  The for method is more commonly used then just the for (var counter = 0; counter < something.lenght; counter++)
+// Its also used to do similar things in iterating over nested  objects.
+
+// What concepts were solidified in the process of working through this challenge?
+
+// Well, its still a bit confusing but I just need to do more of it.  I have tried this challenge many times over and over again and seeing different results.  By using the FOR method there’s a lot more to it then a counter.
 
 
 
