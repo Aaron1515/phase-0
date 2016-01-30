@@ -1,7 +1,7 @@
 // Tally Votes in JavaScript Pairing Challenge.
 
-// I worked on this challenge with:
-// This challenge took me [#] hours.
+// I worked on this challenge with: myself and sanderfer chau
+// This challenge took me [4] hours.
 
 // These are the votes cast by each student. Do not alter these objects here.
 var votes = {
@@ -65,11 +65,18 @@ var officers = {
 }
 
 // Pseudocode
-// For each name in the votes, names put their votes in voteCount
-// If their vote is for president bob,
-// if VOTECOUNT.PRESIDENT.BOB NOT THERE YET
-// CREATE BOB FOR PRESIDENT AND MAKE IT EQUAL TO 1
-// ELSE ADD 1 TO BOB.
+// Part 1 challenge:
+// Create a variable for all the names for votes.
+// Create a variable for all the names in votes in voters in president choice.
+// With the 2 variable we can target the voters choices.
+// If the elected name isn't on the list aready add it to the list with a vote of one
+// If this name exsist already then just add 1 to his total count
+
+// Part 2 challenge:
+// Create a variable for the names in voteCount in canidates, and also make canidates an variable.
+// Create a counter for the highest votes and set the default to 0
+// Start the count for who has the highest votes, if they have the highest votes put their name on the list as winner.  It may get replaced by the next person that is going to have a higher vote.
+
 
 
 // __________________________________________
@@ -139,15 +146,15 @@ for (var name in votes){
 for (var runningFor in voteCount){
   var counter = 0;
   for (var canidates in voteCount[runningFor]){
-    // var allVotes = voteCount[runningFor][canidates];
       if (counter < voteCount[runningFor][canidates]){
         counter = voteCount[runningFor][canidates];
         officers[runningFor] = canidates;
-      }
+      };
   };
 };
 
-
+//Driver code
+console.log(officers)
 
 // __________________________________________
 // Reflection
