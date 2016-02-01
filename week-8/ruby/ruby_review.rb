@@ -35,16 +35,13 @@
 # Refactored Solution
 
 def super_fizzbuzz(array)
-  array.map! do |x|
-  x % 15 == 0 ? x = "FizzBuzz" : x % 3 == 0 ? x = "Fizz" : x % 5 == 0 ? x = "Buzz" : x
-  end
+  array.map! {|num| puts "#{'Fizz' if num % 3 == 0}#{'Buzz' if num % 5 == 0}#{num if num % 5 != 0 && num % 3 != 0}"}
 end
-
 
 # Reflection
 # What concepts did you review or learn in this challenge?
 
-# I review the destructive way to change an array.  I also used an comparison tool for he refactoring so I can run in 1 line.  The time it took 0.00186 seconds in my initial solution.  My refactoring version took only in 0.00131 seconds.  With a huge app running seconds matter depending on internet speed.  I’m sure there is also a way to make it shorter.
+# I review the destructive way to change an array.  I also used an comparison tool for he refactoring so I can run in 1 line.  The time it took 0.00186 seconds in my initial solution.  My refactoring version took only in 0.00021 seconds.  With a huge app running seconds matter depending on internet speed.  I’m sure there is also a way to make it shorter.  I also know that with a space between areas where it is eaizer for humans to read but it also takes a 0.00003 second long for the computer to process that information.  Getting rid of unnecessary spaces could also help it run faster and clean for the comoputer.
 
 # What is still confusing to you about Ruby?
 
