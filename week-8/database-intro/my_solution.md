@@ -67,7 +67,7 @@ ORDER BY region_id ASC;
 9.
 SELECT region_name
 FROM regions
-WHERE region_name = '%central%';
+WHERE region_name LIKE = '%central%';
 
 10.
 SELECT region_name, state_name

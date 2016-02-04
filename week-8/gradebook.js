@@ -71,7 +71,7 @@ var gradebook = {
   },
 };
 
-function average(new_array){
+  function average(new_array){
   var total = 0;
   for (var x = 0; x < new_array.length; x++){
     total += new_array[x];
