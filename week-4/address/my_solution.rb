@@ -3,8 +3,13 @@
 # I worked on this challenge [myself ].
 
 # Your Solution Below
-def make_address (street, city, state, zip)
-  return "You live at #{street}, in the beautiful city of #{city}, #{state}. Your zip is #{zip}."
+# Create a metho to except address, city, state, zip.
+def make_address(address, city, state, zip)
+  # Return string with address, city, state, zip.
+  "You live at #{address}, in the beautiful city of #{city}, #{state}. Your zip is #{zip}."
 end
 
-puts make_address("633 Folsom St.","San Francisco","CA","94107")
+
+
+
+# make_address("633 Folsom St.", "San Francisco", "CA", "94107")
